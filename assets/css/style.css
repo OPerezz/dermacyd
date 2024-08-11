@@ -30,7 +30,16 @@ body nav {
   font-size: 20px;
   line-height: 26px;
 }
-body nav .backdrop {
+body nav .container {
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 16px;
+}
+body nav .menu-mobile {
+  width: 100%;
+  height: 100%;
+}
+body nav .menu-mobile .backdrop {
   width: 102vw;
   height: 100vh;
   background-color: #d6006d;
@@ -39,74 +48,69 @@ body nav .backdrop {
   left: 100%;
   transition: left 0.4s ease-out;
 }
-body nav .backdrop.active {
+body nav .menu-mobile .backdrop.active {
   left: 0;
 }
-body nav .backdrop__content {
+body nav .menu-mobile .backdrop__content {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 50px 20px 10px;
 }
-body nav .backdrop__content .menu-handle {
+body nav .menu-mobile .backdrop__content .menu-handle {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body nav .backdrop__content .menu-handle div {
+body nav .menu-mobile .backdrop__content .menu-handle div {
   position: absolute;
   top: 8px;
 }
-body nav .backdrop__content .menu-handle div:first-child {
+body nav .menu-mobile .backdrop__content .menu-handle div:first-child {
   transform: rotate(45deg);
 }
-body nav .backdrop__content .menu-handle div:last-child {
+body nav .menu-mobile .backdrop__content .menu-handle div:last-child {
   transform: rotate(135deg);
 }
-body nav .backdrop__nav {
+body nav .menu-mobile .backdrop__nav {
   width: 100%;
   padding: 5px 20px 0;
 }
-body nav .backdrop__nav .menu a {
+body nav .menu-mobile .backdrop__nav .menu a {
   color: #ffffff;
 }
-body nav .backdrop__nav .menu li {
+body nav .menu-mobile .backdrop__nav .menu li {
   margin: 15px 0;
 }
-body nav .backdrop__nav .socials {
+body nav .menu-mobile .backdrop__nav .socials {
   width: 100px;
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
 }
-body nav .backdrop .line {
+body nav .menu-mobile .backdrop .line {
   width: 100%;
   height: 1px;
   background-color: #ffffff;
   margin-top: 7px;
 }
-body nav .menu-handle {
+body nav .menu-mobile .menu-handle {
   padding: 10px;
 }
-body nav .menu-handle.open {
+body nav .menu-mobile .menu-handle.open {
   margin-bottom: 5px;
   margin-right: -10px;
 }
-body nav .menu-handle.close {
+body nav .menu-mobile .menu-handle.close {
   margin-right: 6px;
 }
-body nav .menu-handle div {
+body nav .menu-mobile .menu-handle div {
   width: 20px;
   height: 3px;
   border-radius: 10px;
   background-color: #ffffff;
   margin: 3px 0;
-}
-body nav .container {
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-bottom: 16px;
 }
 @media (min-width: 1000px) {
   body nav ul {

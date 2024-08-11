@@ -37,114 +37,118 @@ body {
           font-size: 20px;
           line-height: 26px;
 
-          .backdrop {
-               width: 102vw;
-               height: 100vh;
-               background-color: $pink;
-               position: fixed;
-               top: 0;
-               left: 100%;
-               transition: left 0.4s ease-out;
-
-               &.active {
-                    left: 0;
-               }
-
-               &__content {
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    padding: 50px 20px 10px;
-
-                    .menu-handle {
-                         position: relative;
-                         display: flex;
-                         justify-content: center;
-                         align-items: center;
-
-                         div {
-                              position: absolute;
-                              top: 8px;
-                         }
-
-                         div:first-child {
-                              transform: rotate(45deg);
-
-                         }
-
-                         div:last-child {
-                              transform: rotate(135deg);
-                         }
-                    }
-               }
-
-
-               &__nav {
-                    width: 100%;
-                    padding: 5px 20px 0;
-
-
-                    .menu {
-                         a {
-                              color: #ffffff;
-                         }
-
-                         li {
-                              margin: 15px 0;
-
-                         }
-                    }
-
-                    .socials {
-                         width: 100px;
-                         display: flex;
-                         justify-content: space-between;
-                         margin-top: 8px;
-                    }
-               }
-
-               .line {
-                    width: 100%;
-                    height: 1px;
-                    background-color: #ffffff;
-                    margin-top: 7px;
-               }
-          }
-
-          .menu-handle {
-               padding: 10px;
-
-               &.open{
-                    margin-bottom: 5px;
-                    margin-right: -10px;
-               }
-
-
-               &.close {
-                    margin-right: 6px;
-               }
-
-
-               div {
-                    width: 20px;
-                    height: 3px;
-                    border-radius: 10px;
-                    background-color: #ffffff;
-                    margin: 3px 0;
-               }
-          }
-
-
           .container {
                justify-content: space-between;
                align-items: flex-end;
                padding-bottom: 16px;
           }
 
-     }
+          .menu-mobile {
+               width: 100%;
+               height: 100%;
 
-     .home{
-          
+               .backdrop {
+                    width: 102vw;
+                    height: 100vh;
+                    background-color: $pink;
+                    position: fixed;
+                    top: 0;
+                    left: 100%;
+                    transition: left 0.4s ease-out;
+
+                    &.active {
+                         left: 0;
+                    }
+
+                    &__content {
+                         width: 100%;
+                         display: flex;
+                         justify-content: space-between;
+                         padding: 50px 20px 10px;
+
+                         .menu-handle {
+                              position: relative;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+
+                              div {
+                                   position: absolute;
+                                   top: 8px;
+                              }
+
+                              div:first-child {
+                                   transform: rotate(45deg);
+
+                              }
+
+                              div:last-child {
+                                   transform: rotate(135deg);
+                              }
+                         }
+                    }
+
+
+                    &__nav {
+                         width: 100%;
+                         padding: 5px 20px 0;
+
+
+                         .menu {
+                              a {
+                                   color: #ffffff;
+                              }
+
+                              li {
+                                   margin: 15px 0;
+
+                              }
+                         }
+
+                         .socials {
+                              width: 100px;
+                              display: flex;
+                              justify-content: space-between;
+                              margin-top: 8px;
+                         }
+                    }
+
+                    .line {
+                         width: 100%;
+                         height: 1px;
+                         background-color: #ffffff;
+                         margin-top: 7px;
+                    }
+               }
+
+               .menu-handle {
+                    padding: 10px;
+
+                    &.open {
+                         margin-bottom: 5px;
+                         margin-right: -10px;
+                    }
+
+
+                    &.close {
+                         margin-right: 6px;
+                    }
+
+
+                    div {
+                         width: 20px;
+                         height: 3px;
+                         border-radius: 10px;
+                         background-color: #ffffff;
+                         margin: 3px 0;
+                    }
+               }
+
+
+          }
+
+
+
      }
 
 
