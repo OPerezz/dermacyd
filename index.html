@@ -7,56 +7,66 @@
      <title>Dermacyd</title>
 
      <link rel="stylesheet" href="assets/css/reset.css">
-     <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="icon" href="assets/images/fav.png" type="image/png">
 
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
           rel="stylesheet">
 
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+     <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
      <nav>
           <div class="menu-mobile">
                <div id="backdrop-menu" class="backdrop">
-                    <div class="backdrop__content">
-                         <div class="logo-mobile">
-                              <img src="assets/images/logo.webp" alt="">
+                    <div class="container">
+                         <div class="backdrop__content">
+                              <div class="logo-mobile">
+                                   <img src="assets/images/logo.webp" alt="">
+                              </div>
+                              <div id="menu-handle-close" class="menu-handle close">
+                                   <div></div>
+                                   <div></div>
+                              </div>
                          </div>
-                         <div id="menu-handle-close" class="menu-handle close">
-                              <div></div>
-                              <div></div>
-                         </div>
-                    </div>
-                    <div class="line"></div>
+                         <div class="line"></div>
 
-                    <div class="backdrop__nav">
-                         <ul class="menu">
-                              <a href="http://">
-                                   <li class="menu-item">A Marcos</li>
-                              </a>
-                              <a href="http://">
-                                   <li class="menu-item">Produtos</li>
-                              </a>
-                              <a href="http://">
-                                   <li class="menu-item">Onde Comprar</li>
-                              </a>
-                              <a href="http://">
-                                   <li class="menu-item">Dúvidas</li>
-                              </a>
-                              <a href="http://">
-                                   <li class="menu-item">Dicas</li>
-                              </a>
-                              <a href="http://">
-                                   <li class="menu-item">Contato</li>
-                              </a>
-                         </ul>
-                         <ul class="socials">
-                              <img src="https://via.placeholder.com/24x24" alt="">
-                              <img src="https://via.placeholder.com/24x24" alt="">
-                              <img src="https://via.placeholder.com/24x24" alt="">
-                         </ul>
+                         <div class="backdrop__nav">
+                              <ul class="menu">
+                                   <a href="http://">
+                                        <li class="menu-item">A Marcos</li>
+                                   </a>
+                                   <a href="http://">
+                                        <li class="menu-item">Produtos</li>
+                                   </a>
+                                   <a href="http://">
+                                        <li class="menu-item">Onde Comprar</li>
+                                   </a>
+                                   <a href="http://">
+                                        <li class="menu-item">Dúvidas</li>
+                                   </a>
+                                   <a href="http://">
+                                        <li class="menu-item">Dicas</li>
+                                   </a>
+                                   <a href="http://">
+                                        <li class="menu-item">Contato</li>
+                                   </a>
+                              </ul>
+                              <ul class="socials">
+                                   <img src="https://via.placeholder.com/24x24" alt="">
+                                   <img src="https://via.placeholder.com/24x24" alt="">
+                                   <img src="https://via.placeholder.com/24x24" alt="">
+                              </ul>
+                         </div>
                     </div>
                </div>
                <div class="container">
@@ -71,7 +81,7 @@
                </div>
           </div>
      </nav>
-     <div class="home">
+     <section class="home">
           <div class="container">
                <div class="home__content">
                     <h2>
@@ -79,15 +89,18 @@
                          com a <b>Dermacyd®️</b>
                     </h2>
                     <a>
-                         Quero conhecer
-                         <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M11.25 5H0.75" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                              <path d="M7.5 8.75L11.25 5" stroke="white" stroke-linecap="round"
-                                   stroke-linejoin="round" />
-                              <path d="M7.5 1.25L11.25 5" stroke="white" stroke-linecap="round"
-                                   stroke-linejoin="round" />
-                         </svg>
-
+                         <span>
+                              Quero conhecer
+                              <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                   <path d="M11.25 5H0.75" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                   <path d="M7.5 8.75L11.25 5" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                   <path d="M7.5 1.25L11.25 5" stroke="white" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                              </svg>
+                         </span>
                     </a>
                     <div class="hero">
                          <img src="assets/images/logo-ems.png" alt="Logo EMS">
@@ -98,8 +111,569 @@
                     </div>
                </div>
           </div>
-     </div>
+     </section>
+     <section class="brand">
+          <div class="container">
+               <div class="brand__content">
+                    <h3>
+                         A MARCA
+                    </h3>
+                    <h4>
+                         Dermacyd®️: A marca preferida das brasileiras
+                    </h4>
+                    <p>
+                         Milhares de mulheres já sabem, pois não é segredo para ninguém: com a Dermacyd®, você sente a
+                         diferença
+                         no seu autocuidado diário.
+                    </p>
+                    <p>
+                         Dermacyd® é a marca de sabonete líquido íntimo que conhece as necessidades e os desafios que as
+                         mulheres
+                         enfrentam diariamente em sua rotina corrida.
+                    </p>
+                    <p>
+                         Conte com Dermacyd® todos os dias para você se sentir mais limpa, fresca e confiante ao longo
+                         do seu dia!
+                    </p>
+                    <div class="brand-banner-mobile"></div>
+               </div>
+          </div>
+     </section>
+     <section class="campaign">
+          <div class="campaign__content">
+               <div class="container">
+                    <div class="campaign-info">
+                         <h3>
+                              Conheça a nossa nova
+                              campanha de TV
+                         </h3>
+                         <p>
+                              Cuide primeiro de quem mais importa: Você!
+                         </p>
+                    </div>
+               </div>
+          </div>
+          <div class="video-player">
+               <div class="backdrop-video">
+                    <img src="assets/images/play.png" alt="botão de play">
+               </div>
+          </div>
+     </section>
+     <section class="formula">
+          <div class="container">
+               <div class="formula__content">
+                    <div class="formula__content__info">
+                         <div class="formula__content__info__title">
+                              <img src="assets/images/dna.png" alt="">
+                              <h3>Fórmula exclusiva com <b>BIO PROTECT</b></h3>
+                         </div>
+                         <p>Pensando no dia a dia das mulheres, Dermacyd® desenvolveu uma fórmula exclusiva que contém
+                              <b>BIO PROTECT</b>, para higiene e cuidado íntimo com diversos benefícios superiores.
+                         </p>
+                         <p>
+                              Ela age naturalmente, limpando sem agredir a flora, enquanto mantém as defesas naturais da
+                              sua região íntima. E ainda mantém o pH adequado desta região por até 24 horas.
+                         </p>
+                    </div>
+                    <div class="formula__content__box">
+                         <ul>
+                              <li>
+                                   <img src="assets/images/ball-info1.png" alt="24h">
+                                   <p>Mantém o pH por <br><span>24 horas</span></p>
+                              </li>
+                              <li>
+                                   <img src="assets/images/ball-info2.png" alt="flor">
+                                   <p>Previne<br><span> Mau odores</span></p>
+                              </li>
+                              <li>
+                                   <img src="assets/images/ball-info3.png" alt="proteção">
+                                   <p>Sensação de<br>
+                                        <span> proteção e frescor</span>
+                                   </p>
+                              </li>
+                              <li>
+                                   <img src="assets/images/ball-info4.png" alt="saude">
+                                   <p>Recomendado por<br>
+                                        <span>Ginecologistas*</span>
+                                   </p>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <section class="products-line">
+          <div class="container">
+               <h3>
+                    Conheça nossos produtos
+               </h3>
+               <div class="products-line__content">
+                    <div class="selector-line">
+                         <div class="form-check active-selector">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                   id="flexRadioDefault1" checked>
+                              <label class="form-check-label" for="flexRadioDefault1">
+                                   Linha Adulta
+                              </label>
+                         </div>
+                         <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                   id="flexRadioDefault2">
+                              <label class="form-check-label" for="flexRadioDefault2">
+                                   Linha Infantil
+                              </label>
+                         </div>
+                    </div>
+                    <div class="carousel-products">
+                         <div class="slick-carousel-products carousel-adult" id="carousel-adult">
+                              <div class="card-adult">
+                                   <h4>Dermacyd
+                                        Femina Floral
+                                   </h4>
+                                   <p>200ml</p>
+                                   <img width="100" src="assets/images/products/feminina-floral.png" alt="">
+                                   <button>Quero conhecer
+                                        <span>
+                                             <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M11.25 5H0.75" stroke="white" stroke-linecap="round"
+                                                       stroke-linejoin="round" />
+                                                  <path d="M7.5 8.75L11.25 5" stroke="white" stroke-linecap="round"
+                                                       stroke-linejoin="round" />
+                                                  <path d="M7.5 1.25L11.25 5" stroke="white" stroke-linecap="round"
+                                                       stroke-linejoin="round" />
+                                             </svg>
+                                        </span></button>
+                              </div>
+                              <div class="card-adult">
+                                   <h4>Dermacyd Neutralize
+                                   </h4>
+                                   <p>200ml</p>
+                                   <img width="100" src="assets/images/products/neutralize.png" alt="">
+                                   <button>Quero conhecer
+                                        <span>
+                                             <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M11.25 5H0.75" stroke="white" stroke-linecap="round"
+                                                       stroke-linejoin="round" />
+                                                  <path d="M7.5 8.75L11.25 5" stroke="white" stroke-linecap="round"
+                                                       stroke-linejoin="round" />
+                                                  <path d="M7.5 1.25L11.25 5" stroke="white" stroke-linecap="round"
+                                                       stroke-linejoin="round" />
+                                             </svg>
+                                        </span>
+                                   </button>
+                              </div>
+                              <div class="card-adult">
+                                   <h4>Dermacyd Delicata Jasmim
+                                   </h4>
+                                   <p>200ml</p>
+                                   <img width="100" src="assets/images/products/delicata.png" alt="">
+                                   <button>Quero conhecer
+                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M11.25 5H0.75" stroke="white" stroke-linecap="round"
+                                                  stroke-linejoin="round" />
+                                             <path d="M7.5 8.75L11.25 5" stroke="white" stroke-linecap="round"
+                                                  stroke-linejoin="round" />
+                                             <path d="M7.5 1.25L11.25 5" stroke="white" stroke-linecap="round"
+                                                  stroke-linejoin="round" />
+                                        </svg>
+                                   </button>
+                              </div>
+                              <div class="card-adult">
+                                   <h4>Dermacyd Breeze Camomila
+                                   </h4>
+                                   <p>200ml</p>
+                                   <img width="100" src="assets/images/products/camomila.png" alt="">
+                                   <button>Quero conhecer
+                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M11.25 5H0.75" stroke="white" stroke-linecap="round"
+                                                  stroke-linejoin="round" />
+                                             <path d="M7.5 8.75L11.25 5" stroke="white" stroke-linecap="round"
+                                                  stroke-linejoin="round" />
+                                             <path d="M7.5 1.25L11.25 5" stroke="white" stroke-linecap="round"
+                                                  stroke-linejoin="round" />
+                                        </svg>
+                                   </button>
+                              </div>
+                              <div class="card-adult">
+                                   <h4>Dermacyd Kit Femina Floral
+                                   </h4>
+                                   <p>200ml + 100ml</p>
+                                   <img width="100" src="assets/images/products/kit-floral.png" alt="">
+                                   <button>Quero conhecer
+                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M11.25 5H0.75" stroke="white" stroke-linecap="round"
+                                                  stroke-linejoin="round" />
+                                             <path d="M7.5 8.75L11.25 5" stroke="white" stroke-linecap="round"
+                                                  stroke-linejoin="round" />
+                                             <path d="M7.5 1.25L11.25 5" stroke="white" stroke-linecap="round"
+                                                  stroke-linejoin="round" />
+                                        </svg>
+                                   </button>
+                              </div>
+                              <div class="card-adult">
+                                   <h4>Dermacyd Kit Delicata Jasmimi
+                                   </h4>
+                                   <p>200ml + 100ml</p>
+                                   <img width="100" src="assets/images/products/kit-jasmine.png" alt="">
+                                   <button>Quero conhecer
+                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M11.25 5H0.75" stroke="white" stroke-linecap="round"
+                                                  stroke-linejoin="round" />
+                                             <path d="M7.5 8.75L11.25 5" stroke="white" stroke-linecap="round"
+                                                  stroke-linejoin="round" />
+                                             <path d="M7.5 1.25L11.25 5" stroke="white" stroke-linecap="round"
+                                                  stroke-linejoin="round" />
+                                        </svg>
+                                   </button>
+                              </div>
+                         </div>
+                         <div id="carousel-child" class="slick-carousel-products carousel-child" style="display:none">
+                              <div class="card-adult">
+                                   <h4>Dermacyd Infantil
+                                   </h4>
+                                   <p>200ml</p>
+                                   <img width="100" src="assets/images/products/infantil.png" alt="">
+                                   <button>Quero conhecer
+                                        <span>
+                                             <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M11.25 5H0.75" stroke="white" stroke-linecap="round"
+                                                       stroke-linejoin="round" />
+                                                  <path d="M7.5 8.75L11.25 5" stroke="white" stroke-linecap="round"
+                                                       stroke-linejoin="round" />
+                                                  <path d="M7.5 1.25L11.25 5" stroke="white" stroke-linecap="round"
+                                                       stroke-linejoin="round" />
+                                             </svg>
+                                        </span>
+                                   </button>
+                              </div>
+                              <div class="card-adult">
+                                   <h4>Dermacyd Kit Infantil
+                                   </h4>
+                                   <p>200ml + 100ml</p>
+                                   <img width="100" src="assets/images/products/kit-Infantil.png" alt="">
+                                   <button>Quero conhecer
+                                        <span>
+                                             <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                                  xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M11.25 5H0.75" stroke="white" stroke-linecap="round"
+                                                       stroke-linejoin="round" />
+                                                  <path d="M7.5 8.75L11.25 5" stroke="white" stroke-linecap="round"
+                                                       stroke-linejoin="round" />
+                                                  <path d="M7.5 1.25L11.25 5" stroke="white" stroke-linecap="round"
+                                                       stroke-linejoin="round" />
+                                             </svg>
+                                        </span>
+                                   </button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <section class="buy-now">
+          <div class="container">
+               <div class="buy-now__title">
+                    <h3>Compre Já</h3>
+                    <p>Você encontra Dermacyd® nas farmácias online abaixo:</p>
+               </div>
+               <div class="buy-now__content">
+                    <ul>
+                         <li><img src="assets/images/droga_raia.png" alt=""></li>
+                         <li><img src="assets/images/drogasil.png" alt=""></li>
+                         <li><img src="assets/images/são_paulo.png" alt=""></li>
+                         <li><img src="assets/images/pague_menos.png" alt=""></li>
+                         <li><img src="assets/images/panvel.png" alt=""></li>
+                         <li><img src="assets/images/venancio.png" alt=""></li>
+                    </ul>
+               </div>
+          </div>
+     </section>
+     <section class="faq">
+          <div class="container">
+               <h3>
+                    Dúvidas Frequentes
+               </h3>
+               <div class="accordion__content">
+                    <div class="accordion__content__bg bg1"><span>Corpo</span></div>
+                    <div class="accordion" id="accordion1">
+                         <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne1">
+                                   <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne1" aria-expanded="true"
+                                        aria-controls="collapseOne1">
+                                        <span class="accordion-item-title">O que é pH?</span>
+                                        <span class="op-accordion"></span>
+                                   </button>
+                              </h2>
+                              <div id="collapseOne1" class="accordion-collapse collapse show"
+                                   aria-labelledby="headingOne1" data-bs-parent="#accordion1">
+                                   <div class="accordion-body">
+                                        O pH ou o "potencial hidrogeniônico" presente em uma determinada substância é
+                                        utilizado para medir os níveis de acidez e basicidade (alcalinidade), ele vai
+                                        definir por meio de uma escala numérica adimensional se a substância é ácida,
+                                        neutra ou básica.
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo1">
+                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo1" aria-expanded="false"
+                                        aria-controls="collapseTwo1">
+                                        <span class="accordion-item-title">Qual o pH da região íntima</span>
+                                        <span class="op-accordion"></span>
+                                   </button>
+                              </h2>
+                              <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1"
+                                   data-bs-parent="#accordion1">
+                                   <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree1">
+                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree1" aria-expanded="false"
+                                        aria-controls="collapseThree1">
+                                        <span class="accordion-item-title">Grávidas podem utilizar Dermacyd?</span>
+                                        <span class="op-accordion"></span>
+                                   </button>
+                              </h2>
+                              <div id="collapseThree1" class="accordion-collapse collapse"
+                                   aria-labelledby="headingThree1" data-bs-parent="#accordion1">
+                                   <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="accordion__content">
+                    <div class="accordion__content__bg bg2"><span>INGREDIENTES</span></div>
+                    <div class="accordion" id="accordion2">
+                         <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne2">
+                                   <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne2" aria-expanded="true"
+                                        aria-controls="collapseOne2">
+                                        <span class="accordion-item-title">Como escolher o sabonete íntimo
+                                             feminino?</span>
+                                        <span class="op-accordion"></span>
+                                   </button>
+                              </h2>
+                              <div id="collapseOne2" class="accordion-collapse collapse show"
+                                   aria-labelledby="headingOne2" data-bs-parent="#accordion2">
+                                   <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo2">
+                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo2" aria-expanded="false"
+                                        aria-controls="collapseTwo2">
+                                        <span class="accordion-item-title">Porque Dermacyd é diferente dos outros
+                                             sabonetes íntimos?</span>
+                                        <span class="op-accordion"></span>
+                                   </button>
+                              </h2>
+                              <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2"
+                                   data-bs-parent="#accordion2">
+                                   <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree2">
+                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree2" aria-expanded="false"
+                                        aria-controls="collapseThree2">
+                                        <span class="accordion-item-title">Existe diferença entre Dermacyd e sabonetes
+                                             comuns básicos?</span>
+                                        <span class="op-accordion"></span>
+                                   </button>
+                              </h2>
+                              <div id="collapseThree2" class="accordion-collapse collapse"
+                                   aria-labelledby="headingThree2" data-bs-parent="#accordion2">
+                                   <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="accordion__content">
+                    <div class="accordion__content__bg bg3"><span>MODO DE USO</span></div>
+                    <div class="accordion" id="accordion3">
+                         <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne3">
+                                   <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne3" aria-expanded="true"
+                                        aria-controls="collapseOne3">
+                                        <span class="accordion-item-title">Posso usar o sabonete íntimo feminino
+                                             diariamente?</span>
+                                        <span class="op-accordion"></span>
+                                   </button>
+                              </h2>
+                              <div id="collapseOne3" class="accordion-collapse collapse show"
+                                   aria-labelledby="headingOne3" data-bs-parent="#accordion3">
+                                   <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo3">
+                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo3" aria-expanded="false"
+                                        aria-controls="collapseTwo3">
+                                        <span class="accordion-item-title">Posso usar Dermacyd durante a
+                                             menstruação?</span>
+                                        <span class="op-accordion"></span>
+                                   </button>
+                              </h2>
+                              <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3"
+                                   data-bs-parent="#accordion3">
+                                   <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree3">
+                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree3" aria-expanded="false"
+                                        aria-controls="collapseThree3">
+                                        <span class="accordion-item-title">Modo de usar?</span>
+                                        <span class="op-accordion"></span>
+                                   </button>
+                              </h2>
+                              <div id="collapseThree3" class="accordion-collapse collapse"
+                                   aria-labelledby="headingThree3" data-bs-parent="#accordion3">
+                                   <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingFour3">
+                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour3" aria-expanded="false"
+                                        aria-controls="collapseFour3">
+                                        <span class="accordion-item-title">Grávidas podem utilizar Dermacyd?</span>
+                                        <span class="op-accordion"></span>
+                                   </button>
+                              </h2>
+                              <div id="collapseFour3" class="accordion-collapse collapse" aria-labelledby="headingFour3"
+                                   data-bs-parent="#accordion3">
+                                   <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds the appropriate classes that we use to
+                                        style each element. These classes control the overall appearance, as well as the
+                                        showing and hiding via CSS transitions. You can modify any of this with custom
+                                        CSS or overriding our default variables. It's also worth noting that just about
+                                        any HTML can go within the <code>.accordion-body</code>, though the transition
+                                        does limit overflow.
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <footer class="foot">
+          <div class="container">
+               <img class="logo-ems-footer" src="" alt="">
+               <div><img src="assets/images/logo-rosa.png" alt=""></div>
+               <p>
+                    Informamos que só poderemos iniciar o contato e registrar sua solicitação após o preenchimento do
+                    formulário a seguir.<br><br>
+
+                    Em cumprimento à Lei 13.709/2018 (LGPD), todos os dados fornecidos serão mantidos sob sigilo e
+                    protegidos por esta empresa e poderão ser compartilhados para a condução do seu atendimento ou
+                    quando solicitado pelas Autoridades Públicas de saúde.<br><br>
+
+                    Em caso de necessidade de tratamento dos seus dados pessoais (alteração, anonimação,
+                    compartilhamento ou exclusão), entre em contato pelo Portal do Titular.
+                    <br><br>
+                    Ao prosseguir com o envio deste formulário, fica consentido o fornecimento de seus dados pessoais de
+                    acordo com os esclarecimentos anteriormente prestados.
+               </p>
+          </div>
+          <div class="line"></div>
+          <h4>
+               Copyright 2024 EMS Pharma
+               Desenvolvido por We e IDK
+          </h4>
+     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+     crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src="assets/js/main.js"></script>
 
 </html>

@@ -1,4 +1,5 @@
 $pink : #d6006d;
+$black: #1b1b1b;
 $font-text: 'Poppins';
 $font-title: 'Rubik';
 
@@ -23,6 +24,10 @@ body {
           margin: 0 auto;
           display: flex;
 
+          @media (min-width:700px) {
+               max-width: 680px;
+          }
+
           @media (min-width:1000px) {
                max-width: 1280px;
           }
@@ -32,6 +37,7 @@ body {
           width: 100%;
           height: 105px;
           position: fixed;
+          z-index: 1000;
           top: 0;
           background-color: $pink;
           font-family: $font-title;
@@ -62,6 +68,12 @@ body {
                          left: 0;
                     }
 
+                    .container {
+                         flex-direction: column;
+                         justify-content: flex-start;
+                         align-items: center;
+                    }
+
                     &__content {
                          width: 100%;
                          display: flex;
@@ -70,9 +82,6 @@ body {
 
                          .menu-handle {
                               position: relative;
-                              display: flex;
-                              justify-content: center;
-                              align-items: center;
 
                               div {
                                    position: absolute;
@@ -98,7 +107,7 @@ body {
 
                          .menu {
                               a {
-                                   color: #ffffff;
+                                   color: #ffffff !important;
                               }
 
                               li {
@@ -165,6 +174,7 @@ body {
                h2 {
                     width: 90%;
                     font-family: $font-title;
+                    color: $black;
                     font-size: 24px;
                     font-weight: 300;
                     line-height: 28.8px;
@@ -175,27 +185,38 @@ body {
                a {
                     margin: 15px 0;
                     background-color: $pink;
-                    padding: 8px 12px;
+                    padding: 8px 15px;
                     border: none;
                     border-radius: 100px;
 
                     font-family: $font-title;
-                    color: #ffffff;
+                    color: #ffffff !important;
                     font-size: 14px;
                     font-weight: 500;
                     line-height: 18.2px;
                     text-align: left;
 
+
+                    span {
+                         display: flex;
+                         justify-content: center;
+                         align-items: center;
+
+                         svg {
+                              margin-left: 7px;
+                         }
+                    }
+
                }
 
                .hero {
                     width: 100%;
-                    height: 70vh;
                     max-height: 600px;
                     margin-top: 15px;
                     padding: 18px 20px 20px;
                     border-radius: 15px;
                     background-image: url(../images/hero-mobile.png);
+                    aspect-ratio: 335/420;
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -212,8 +233,11 @@ body {
 
                          p {
 
-                              width: 172px;
+                              width: 100%;
+                              max-width: 172px;
+                              ;
                               margin-left: 12px;
+                              margin-bottom: 0;
                               font-family: $font-title;
                               font-size: 14px;
                               font-weight: 500;
@@ -224,6 +248,628 @@ body {
 
                     }
                }
+          }
+     }
+
+     .slick-card-adult {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+     }
+
+     .brand {
+          padding: 30px 0;
+
+          &__content {
+               width: 100%;
+
+               h3 {
+                    width: fit-content;
+                    padding: 4px 10px;
+                    border: 1px solid $pink;
+                    border-radius: 100px;
+
+                    font-family: $font-text;
+                    color: $pink;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 18.2px;
+                    letter-spacing: -0.03em;
+                    text-align: left;
+
+               }
+
+               h4 {
+                    width: 100%;
+                    margin: 10px 0;
+
+                    font-family: $font-title;
+                    color: $black;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 26px;
+                    text-align: left;
+
+               }
+
+               p {
+                    width: 100%;
+
+                    font-family: $font-text;
+                    color: $black;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    text-align: left;
+
+                    margin: 15px 0;
+               }
+
+               .brand-banner-mobile {
+                    width: 100%;
+                    max-height: 600px;
+                    margin: 30px 0;
+                    border-radius: 15px;
+                    background-image: url(../images/brand-banner-mobile.png);
+                    aspect-ratio: 335/385;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+               }
+          }
+     }
+
+     .campaign {
+          padding: 30px 0;
+
+          .container {
+               justify-content: center;
+          }
+
+          &__content {
+               width: 100%;
+               padding: 20px 0;
+               background-color: $pink;
+               color: #ffffff;
+
+               .campaign-info {
+                    h3 {
+                         font-family: $font-title;
+                         font-size: 24px;
+                         font-weight: 500;
+                         letter-spacing: 0.5px;
+                         line-height: 31.2px;
+                         text-align: center;
+
+                    }
+
+                    p {
+                         margin-top: 13px;
+
+                         font-family: $font-text;
+                         font-size: 14px;
+                         font-weight: 400;
+                         line-height: 18.2px;
+                         text-align: center;
+
+                    }
+               }
+          }
+
+          .video-player {
+               width: 100%;
+               height: 500px;
+               background: url(../images/bg-video.png);
+               background-position: left;
+               background-repeat: no-repeat;
+               background-size: cover;
+
+               .backdrop-video {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(00, 00, 00, 0.3);
+               }
+          }
+     }
+
+     .formula {
+          padding: 30px 0;
+
+          &__content {
+               &__info {
+                    width: 100%;
+
+                    &__title {
+                         width: 100%;
+                         display: flex;
+                         justify-content: flex-start;
+                         align-items: center;
+
+                         h3 {
+                              width: 60%;
+                              margin-left: 12px;
+
+                              font-family: $font-title;
+                              color: $black;
+                              font-size: 24px;
+                              font-weight: 500;
+                              line-height: 31.2px;
+                              text-align: left;
+
+                         }
+                    }
+
+                    p {
+                         font-family: $font-text;
+                         font-size: 14px;
+                         font-weight: 400;
+                         line-height: 21px;
+                         text-align: left;
+
+                         margin: 10px 0;
+                    }
+               }
+
+               &__box {
+                    width: 100%;
+
+                    ul {
+                         display: flex;
+                         align-items: flex-start;
+                         justify-content: space-between;
+                         flex-wrap: wrap;
+
+                         li {
+                              width: 100%;
+                              display: flex;
+                              align-items: center;
+                              margin: 18px 0 0;
+                              padding: 24px 20px;
+                              background-color: rgba(214, 0, 109, 0.03);
+                              border: solid 1px rgba(214, 0, 109, 0.11);
+                              border-radius: 7px;
+
+                              @media (min-width:660px) {
+                                   max-width: 300px;
+                              }
+
+                              p {
+                                   max-width: 140px;
+                                   margin-left: 16px;
+                                   font-family: $font-title;
+                                   color: $black;
+                                   font-size: 14px;
+                                   font-weight: 400;
+                                   line-height: 18.2px;
+                                   text-align: left;
+
+                                   span {
+                                        font-weight: 600;
+                                        color: $pink;
+                                   }
+
+                              }
+                         }
+                    }
+               }
+          }
+     }
+
+     .products-line {
+          width: 100%;
+
+          .container {
+               flex-direction: column;
+          }
+
+          h3 {
+               font-family: $font-title;
+               font-size: 24px;
+               font-weight: 500;
+               line-height: 31.2px;
+               text-align: left;
+
+          }
+
+          &__content {
+               width: 100%;
+
+               .selector-line {
+                    width: fit-content;
+                    display: flex;
+                    margin: 12px 0 20px;
+
+                    .form-check {
+                         display: flex;
+                         align-items: center;
+                         border: 1px solid $pink;
+                         border-radius: 100px;
+                         padding: 5px 15px;
+                         margin-right: 12px;
+                         cursor: pointer;
+
+                         .form-check-input {
+                              margin: 0;
+                              border: 1px solid $pink;
+                              background-color: #ffffff;
+
+                              &:focus {
+                                   box-shadow: none;
+                              }
+                         }
+
+
+                         &.active-selector {
+                              background-color: $pink;
+
+
+                              .form-check-label {
+                                   color: #ffffff;
+                              }
+                         }
+
+                         .form-check-input:checked[type=radio] {
+                              background-image: none;
+                         }
+
+                         .form-check-label {
+                              margin-left: 5px;
+                              color: $pink;
+                         }
+                    }
+               }
+
+               .carousel-products {
+                    width: 100%;
+                    padding: 20px 0;
+                    border-radius: 15px;
+                    background-image: url(../images/bg-slick.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    .carousel-adult,
+                    .carousel-child {
+                         width: 100%;
+
+
+
+                         .slick-prev:before,
+                         .slick-next:before {
+                              width: 32px;
+                              height: 32px;
+                              color: $pink;
+                              font-size: 34px;
+                         }
+
+                         .slick-next {
+                              right: 0;
+                         }
+
+                         .slick-prev {
+                              left: -20px;
+                              z-index: 10;
+                         }
+
+
+                         .card-adult {
+                              display: flex;
+                              flex-direction: column;
+                              justify-content: center;
+                              align-items: center;
+
+                              h4 {
+                                   margin-bottom: 0;
+
+                                   font-family: $font-title;
+                                   color: $pink;
+                                   font-size: 18px;
+                                   font-weight: 500;
+                                   line-height: 21.6px;
+                                   text-align: center;
+
+                              }
+
+                              p {
+                                   font-family: $font-title;
+                                   color: $pink;
+                                   font-size: 18px;
+                                   font-weight: 400;
+                                   line-height: 21.6px;
+                                   text-align: center;
+                              }
+
+                              img {
+                                   width: auto;
+                                   height: 248px;
+                              }
+
+                              button {
+                                   width: auto;
+                                   display: flex;
+                                   align-items: center;
+                                   margin-top: 17px;
+                                   padding: 8px 12px;
+                                   background-color: $pink;
+                                   border-radius: 100px;
+                                   border: none;
+
+                                   color: #ffffff;
+                                   font-family: $font-text;
+                                   font-size: 14px;
+                                   font-weight: 500;
+                                   line-height: 18.2px;
+                                   text-align: left;
+
+                                   svg {
+                                        margin-left: 5px;
+                                   }
+
+                              }
+                         }
+                    }
+               }
+          }
+     }
+
+     .buy-now {
+          padding: 30px 0;
+
+          .container {
+               flex-direction: column;
+          }
+
+          &__title {
+               h3 {
+                    font-family: $font-title;
+                    color: $black;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 31.2px;
+                    text-align: left;
+
+               }
+
+               p {
+                    margin-top: 12px;
+                    font-family: $font-text;
+                    color: $black;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    text-align: left;
+
+
+               }
+          }
+
+          &__content {
+               width: 100%;
+               min-height: 320px;
+               margin-top: 20px;
+               display: flex;
+               align-items: flex-end;
+               justify-content: center;
+               padding: 22px;
+               background: url(../images/banner-buynow-mobile.png);
+               aspect-ratio: 335/420;
+               background-position: right;
+               background-repeat: no-repeat;
+               background-size: cover;
+               border-radius: 15px;
+
+               ul {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 10%;
+
+                    li {
+
+                         img {
+                              width: 100%;
+                              max-width: 180px;
+                         }
+                    }
+               }
+          }
+     }
+
+     .faq {
+          padding: 30px 0;
+
+
+          .container {
+               flex-direction: column;
+          }
+
+          h3 {
+               font-family: $font-title;
+               font-size: 24px;
+               font-weight: 500;
+               line-height: 31.2px;
+               text-align: left;
+          }
+
+          .accordion__content {
+               width: 100%;
+               margin: 16px 0;
+
+               .accordion-item {
+                    margin-bottom: 12px;
+               }
+
+
+               .accordion-body {
+                    font-family: $font-text;
+                    font-weight: 500;
+                    line-height: 21px;
+                    text-align: left;
+                    color: #ffffff;
+                    font-size: 14px;
+                    background-color: $pink;
+               }
+
+
+               .accordion-button {
+                    position: relative;
+                    font-family: $font-title;
+                    font-weight: 500;
+                    line-height: 20.8px;
+                    text-align: left;
+                    color: #ffffff;
+                    font-size: 16px;
+
+                    &:focus {
+                         box-shadow: none;
+                    }
+
+                    .accordion-item-title {
+                         width: 70%;
+                    }
+
+                    &::after {
+                         background-image: none;
+                    }
+
+                    &.collapsed {
+                         background-color: rgba(214, 0, 109, 0.5);
+                    }
+
+                    .op-accordion {
+                         position: absolute;
+                         left: 90%;
+                         width: 15px;
+                         height: 2px;
+                         background-color: #ffffff;
+
+                         &::after {
+                              content: '';
+                              position: absolute;
+                              display: block;
+                              width: 15px;
+                              height: 2px;
+                              background-color: #ffffff;
+                              transition: transform .2s ease-in-out;
+                         }
+                    }
+
+                    &:not(.collapsed) {
+                         background-color: $pink;
+                         color: #ffffff;
+
+                         .op-accordion::after {
+                              transform: rotate(90deg);
+                         }
+                    }
+               }
+
+               .accordion__content__bg {
+                    width: 100%;
+                    min-height: 219px;
+                    display: flex;
+                    align-items: flex-end;
+                    margin-bottom: 16px;
+                    position: relative;
+                    border-radius: 15px;
+
+                    &.bg1 {
+                         background: url(../images/acrodion-mobile1.png);
+                         background-position: right;
+                         background-repeat: no-repeat;
+                         background-size: cover;
+                         aspect-ratio: 335/219;
+
+
+                    }
+
+                    &.bg2 {
+                         background: url(../images/acrodion-mobile2.png);
+                         background-position: right;
+                         background-repeat: no-repeat;
+                         background-size: cover;
+                         aspect-ratio: 335/219;
+                    }
+
+                    &.bg3 {
+                         background: url(../images/acrodion-mobile3.png);
+                         background-position: right;
+                         background-repeat: no-repeat;
+                         background-size: cover;
+                         aspect-ratio: 335/219;
+                    }
+
+                    &::before {
+                         position: absolute;
+                         display: block;
+                         content: '';
+                         border-radius: 15px;
+                         width: 100%;
+                         height: 100%;
+                         background-color: rgba(00, 00, 00, 0.2);
+                    }
+
+                    span {
+                         margin-left: 16px;
+                         margin-bottom: 16px;
+
+                         position: relative;
+                         z-index: 2;
+
+                         font-family: $font-title;
+                         color: #ffffff;
+                         font-size: 18px;
+                         font-weight: 500;
+                         line-height: 23.4px;
+                         text-align: left;
+
+                    }
+               }
+          }
+     }
+
+     footer {
+          padding: 30px 0;
+
+          .container {
+               flex-direction: column;
+
+               img {
+                    width: 100%;
+                    max-width: 200px;
+               }
+
+               p {
+                    margin: 20px 0;
+
+                    font-family: $font-text;
+                    color: $black;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    text-align: left;
+
+               }
+          }
+
+          .line {
+               width: 100%;
+               height: 1px;
+               background-color: rgba(00, 00, 00, 0.1);
+          }
+
+          h4 {
+               max-width: 200px;
+               margin: 20px auto;
+
+               font-family: $font-title;
+               color: $pink;
+               font-size: 14px;
+               font-weight: 400;
+               line-height: 21px;
+               text-align: center;
           }
      }
 
