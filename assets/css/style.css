@@ -21,14 +21,15 @@ body .container {
     max-width: 680px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   body .container {
-    max-width: 1280px;
+    max-width: 1180px;
   }
 }
 body nav {
   width: 100%;
   height: 105px;
+  max-width: 1920px;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -38,14 +39,19 @@ body nav {
   font-size: 20px;
   line-height: 26px;
 }
-body nav .container {
+body nav .menu-mobile {
+  width: 100%;
+  height: 100%;
+}
+body nav .menu-mobile .container {
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 16px;
 }
-body nav .menu-mobile {
-  width: 100%;
-  height: 100%;
+@media (min-width: 1099px) {
+  body nav .menu-mobile {
+    display: none;
+  }
 }
 body nav .menu-mobile .backdrop {
   width: 102vw;
@@ -122,12 +128,58 @@ body nav .menu-mobile .menu-handle div {
   background-color: #ffffff;
   margin: 3px 0;
 }
+body nav .menu-desk {
+  display: none;
+  height: 100%;
+}
+@media (min-width: 1100px) {
+  body nav .menu-desk {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+  }
+  body nav .menu-desk .container {
+    justify-content: space-between;
+    align-items: center;
+    position: 0;
+  }
+  body nav .menu-desk ul {
+    margin-bottom: 0;
+  }
+  body nav .menu-desk .menu-desk-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    color: #ffffff;
+  }
+  body nav .menu-desk .menu-desk-list a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  body nav .menu-desk .menu-desk-list a li {
+    padding: 5px 10px;
+  }
+  body nav .menu-desk .socials {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 135px;
+  }
+}
 body .home {
   margin-top: 105px;
   padding: 30px 0;
 }
 body .home .container {
   justify-content: center;
+}
+@media (min-width: 1000px) {
+  body .home .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 body .home__content {
   display: flex;
@@ -143,6 +195,9 @@ body .home__content h2 {
   font-weight: 300;
   line-height: 28.8px;
   text-align: center;
+}
+body .home__content .hero__informative-desk {
+  display: none;
 }
 body .home__content a {
   margin: 15px 0;
@@ -197,6 +252,55 @@ body .home__content .hero__informative p {
   line-height: 16.8px;
   text-align: left;
   color: #ffffff;
+}
+@media (min-width: 1100px) {
+  body .home {
+    width: 100%;
+    height: 690px;
+    align-items: flex-start;
+    background-image: url(https://via.placeholder.com/1280x690);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body .home .container {
+    padding: 80px 0 0;
+  }
+  body .home .container .home__content {
+    align-items: flex-start;
+    max-width: 350px;
+  }
+  body .home .container .home__content h2 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #ffffff;
+    text-align: left;
+  }
+  body .home .container .home__content .hero__informative-desk {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  body .home .container .home__content .hero__informative-desk p {
+    width: 100%;
+    max-width: 172px;
+    margin-left: 12px;
+    margin-bottom: 0;
+    font-family: "Rubik";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-align: left;
+    color: #ffffff;
+  }
+  body .home .container .home__content a {
+    padding: 10px 20px;
+    font-size: 24px;
+  }
+  body .home .container .home__content .hero {
+    display: none;
+  }
 }
 body .slick-card-adult {
   display: flex;
@@ -705,39 +809,4 @@ body footer h4 {
   font-weight: 400;
   line-height: 21px;
   text-align: center;
-}
-@media (min-width: 1000px) {
-  body nav ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-  }
-  body nav .menu {
-    max-width: 1020px;
-  }
-  body nav .menu a {
-    color: #ffffff;
-  }
-  body nav .menu a:hover .menu-item {
-    transform: scale(1.08);
-  }
-  body nav .menu a li {
-    padding: 10px;
-    transition: transform 0.4s ease-out;
-  }
-  body nav .menu a li img {
-    width: 260px;
-    margin-bottom: -10px;
-  }
-  body nav .socials {
-    max-width: 145px;
-    margin-left: 20px;
-  }
-  body .home {
-    width: 100%;
-    height: 100%;
-    background: url(../images/bg-hero.png);
-  }
 }/*# sourceMappingURL=style.css.map */
