@@ -25,6 +25,16 @@
 </head>
 
 <body>
+     <div id="myModal" class="modal">
+          <div class="modal-content">
+               <span class="close">&times;</span>
+               <div class="video-container">
+                    <iframe id="youtubeEmbed" width="560" height="315" src="" frameborder="0"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         allowfullscreen></iframe>
+               </div>
+          </div>
+     </div>
      <nav>
           <div class="menu-mobile">
                <div id="backdrop-menu" class="backdrop">
@@ -38,8 +48,9 @@
                                    <div></div>
                               </div>
                          </div>
-                         <div class="line"></div>
-
+                    </div>
+                    <div class="line"></div>
+                    <div class="container">
                          <div class="backdrop__nav">
                               <ul class="menu">
                                    <a href="http://">
@@ -93,7 +104,7 @@
                               <li class="menu-item">Onde Comprar</li>
                          </a>
 
-                         <li class="menu-item">
+                         <li class="menu-item logo">
                               <img src="assets/images/logo.webp" alt="Logo Dermacyd">
                          </li>
                          <a href="http://">
@@ -107,9 +118,15 @@
                          </a>
                     </ul>
                     <ul class="socials">
-                         <li><img src="https://via.placeholder.com/41x41" alt=""></li>
-                         <li><img src="https://via.placeholder.com/41x41" alt=""></li>
-                         <li><img src="https://via.placeholder.com/41x41" alt=""></li>
+                         <a href="http://">
+                              <li><img src="assets/images/social-ig.png" alt="Instagram"></li>
+                         </a>
+                         <a href="http://">
+                              <li><img src="assets/images/social-fb.png" alt="Facebook"></li>
+                         </a>
+                         <a href="http://">
+                              <li><img src="assets/images/social-yt.png" alt="Youtube"></li>
+                         </a>
                     </ul>
                </div>
           </div>
@@ -122,13 +139,23 @@
                          com a <b>Dermacyd®️</b>
                     </h2>
                     <div class="hero__informative-desk">
-                         <img src="assets/images/dna.png" alt="Estrutura do DNA">
+                         <img src="assets/images/dna-branco-desk.png" alt="Estrutura do DNA">
                          <p>FÓRMULA EXCLUSIVA COM BIO PROTECT</p>
                     </div>
                     <a>
                          <span>
                               Quero conhecer
-                              <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+
+                              <svg style="display: none;" class="arrow-desk" xmlns="http://www.w3.org/2000/svg"
+                                   xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="13"
+                                   viewBox="0 0 25 13">
+                                   <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="25"
+                                        height="13"
+                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAANCAYAAABcrsXuAAABFElEQVQ4jWKgFPz//9/h////T/7////1////VRjmMTAwAAAAAP//ooYlh/6jgsn///9nhCtgYGAAAAAA//+ihiUr0CwBgQX///9nBitgYGAAAAAA//+ihiWi////P4fFotX///9nY2BgYAAAAAD//2KE2ujCwMAgSYFd/AwMDO0MDAycaOLbGRgYQgAAAAD//wJZshrEoMw/eAADwyYAAAAA//8CWfKLgYGBlWZWMDD8BgAAAP//YmJgYNhIQwsYGBgYtgMAAAD//6J9nDAwhAAAAAD//6LQkUSkLgYGBgAAAAD//6KGJfjzCQMDAwAAAP//ooYl+HM8AwMDAAAA//+ihiXIZVclhgIGBgYAAAAA//8DAEIwzgVw6ro1AAAAAElFTkSuQmCC" />
+                              </svg>
+
+
+                              <svg class="arrow-mobile" width="12" height="10" viewBox="0 0 12 10" fill="none"
                                    xmlns="http://www.w3.org/2000/svg">
                                    <path d="M11.25 5H0.75" stroke="white" stroke-linecap="round"
                                         stroke-linejoin="round" />
@@ -142,7 +169,7 @@
                     <div class="hero">
                          <img src="assets/images/logo-ems.png" alt="Logo EMS">
                          <div class="hero__informative">
-                              <img src="assets/images/dna.png" alt="Estrutura do DNA">
+                              <img src="assets/images/dna-branco.png" alt="Estrutura do DNA">
                               <p>FÓRMULA EXCLUSIVA COM BIO PROTECT</p>
                          </div>
                     </div>
@@ -190,19 +217,16 @@
                     </div>
                </div>
           </div>
-          <div class="video-player">
-               <div class="backdrop-video">
-                    <img src="assets/images/play.png" alt="botão de play">
-               </div>
-          </div>
+          <div class="video-player" id="openModalBtn"></div>
      </section>
      <section class="formula">
+          <div class="bg-woman"></div>
           <div class="container">
                <div class="formula__content">
                     <div class="formula__content__info">
                          <div class="formula__content__info__title">
                               <img src="assets/images/dna.png" alt="">
-                              <h3>Fórmula exclusiva com <b>BIO PROTECT</b></h3>
+                              <h3>Fórmula exclusiva com <span>BIO PROTECT</span></h3>
                          </div>
                          <p>Pensando no dia a dia das mulheres, Dermacyd® desenvolveu uma fórmula exclusiva que contém
                               <b>BIO PROTECT</b>, para higiene e cuidado íntimo com diversos benefícios superiores.
@@ -216,17 +240,17 @@
                          <ul>
                               <li>
                                    <img src="assets/images/ball-info1.png" alt="24h">
-                                   <p>Mantém o pH por <br><span>24 horas</span></p>
+                                   <p>Mantém o pH <br><span>por 24 horas</span></p>
                               </li>
                               <li>
                                    <img src="assets/images/ball-info2.png" alt="flor">
-                                   <p>Previne<br><span> Mau odores</span></p>
-                              </li>
-                              <li>
-                                   <img src="assets/images/ball-info3.png" alt="proteção">
                                    <p>Sensação de<br>
                                         <span> proteção e frescor</span>
                                    </p>
+                              </li>
+                              <li>
+                                   <img src="assets/images/ball-info3.png" alt="proteção">
+                                   <p>Previne<br><span> Mau odores</span></p>
                               </li>
                               <li>
                                    <img src="assets/images/ball-info4.png" alt="saude">
@@ -237,6 +261,8 @@
                          </ul>
                     </div>
                </div>
+               <p class="use-mode">1 Se utilizado diariamente por no mínimo 3 meses; 2 Fonte: Base Retail Market 2023 -
+                    CloseUp</p>
           </div>
      </section>
      <section class="products-line">
@@ -250,14 +276,14 @@
                               <input class="form-check-input" type="radio" name="flexRadioDefault"
                                    id="flexRadioDefault1" checked>
                               <label class="form-check-label" for="flexRadioDefault1">
-                                   Linha Adulta
+                                   Linha <span>Adulta</span>
                               </label>
                          </div>
                          <div class="form-check">
                               <input class="form-check-input" type="radio" name="flexRadioDefault"
                                    id="flexRadioDefault2">
                               <label class="form-check-label" for="flexRadioDefault2">
-                                   Linha Infantil
+                                   Linha <span> Infantil</span>
                               </label>
                          </div>
                     </div>
@@ -416,19 +442,21 @@
      </section>
      <section class="buy-now">
           <div class="container">
-               <div class="buy-now__title">
-                    <h3>Compre Já</h3>
-                    <p>Você encontra Dermacyd® nas farmácias online abaixo:</p>
-               </div>
                <div class="buy-now__content">
-                    <ul>
-                         <li><img src="assets/images/droga_raia.png" alt=""></li>
-                         <li><img src="assets/images/drogasil.png" alt=""></li>
-                         <li><img src="assets/images/são_paulo.png" alt=""></li>
-                         <li><img src="assets/images/pague_menos.png" alt=""></li>
-                         <li><img src="assets/images/panvel.png" alt=""></li>
-                         <li><img src="assets/images/venancio.png" alt=""></li>
-                    </ul>
+                    <div class="buy-now__content__title">
+                         <h3>Compre Já</h3>
+                         <p>Você encontra Dermacyd® nas farmácias online abaixo:</p>
+                    </div>
+                    <div class="buy-now__content__brands">
+                         <ul>
+                              <li><img src="assets/images/droga_raia.png" alt=""></li>
+                              <li><img src="assets/images/drogasil.png" alt=""></li>
+                              <li><img src="assets/images/são_paulo.png" alt=""></li>
+                              <li><img src="assets/images/pague_menos.png" alt=""></li>
+                              <li><img src="assets/images/panvel.png" alt=""></li>
+                              <li><img src="assets/images/venancio.png" alt=""></li>
+                         </ul>
+                    </div>
                </div>
           </div>
      </section>
@@ -440,6 +468,7 @@
                <div class="accordion__content">
                     <div class="accordion__content__bg bg1"><span>Corpo</span></div>
                     <div class="accordion" id="accordion1">
+                         <h4 class="title-accordion-desk">Corpo</h4>
                          <div class="accordion-item">
                               <h2 class="accordion-header" id="headingOne1">
                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -509,6 +538,7 @@
                <div class="accordion__content">
                     <div class="accordion__content__bg bg2"><span>INGREDIENTES</span></div>
                     <div class="accordion" id="accordion2">
+                         <h4 class="title-accordion-desk">INGREDIENTES</h4>
                          <div class="accordion-item">
                               <h2 class="accordion-header" id="headingOne2">
                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -583,6 +613,7 @@
                <div class="accordion__content">
                     <div class="accordion__content__bg bg3"><span>MODO DE USO</span></div>
                     <div class="accordion" id="accordion3">
+                         <h4 class="title-accordion-desk">MODO DE USO</h4>
                          <div class="accordion-item">
                               <h2 class="accordion-header" id="headingOne3">
                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"

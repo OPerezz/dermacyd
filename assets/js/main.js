@@ -42,7 +42,7 @@ $('.slick-carousel-products').slick({
      slidesToShow: 3,
      responsive: [
           {
-               breakpoint: 1100,
+               breakpoint: 1200,
                settings: {
                     arrows: true,
                     slidesToShow: 2
